@@ -2,8 +2,9 @@ Include/
 Lib/
 Scripts/
 db.sqlite3
+.vscode/
 pyvenv.cfg
 
-*__init__.py
+
 *migrations/
 *__pycache__/

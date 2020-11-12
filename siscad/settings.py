@@ -25,7 +25,7 @@ SECRET_KEY = '1)zps(@yhkhk(^sq^ke37%6w6t=vn48img8t*%)=y3j)0@!(q^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["10.0.0.20"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -38,9 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    #Apps
+    #Django apps
+    'cpf_field',
+
+    #MyApps
     'core',
-    'clientes'
+    'clientes',
 ]
 
 MIDDLEWARE = [
