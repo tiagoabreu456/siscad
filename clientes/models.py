@@ -1,5 +1,5 @@
 from django.db import models
-from cpf_field.models import CPFField
+from cpf_field.models import CPFField # Modelo para cpf
 
 class Cliente(models.Model):
     slug = models.SlugField('Atalho')

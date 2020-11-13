@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>SISCAD - Lista Clientes</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Lista de clientes</h1>
+    
+    <table>
+        <tbody>
+        {% for cliente in clientes %}
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Celular</th>
+                <th>Data de ingresso</th>
+            </tr>
+            <tr>
+                <td>{{cliente.nome}}</td>
+                <td>{{cliente.email}}</td>
+                <td>{{cliente.celular}}</td>
+                <td>{{cliente.start_date}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+  </body>
+</html>
