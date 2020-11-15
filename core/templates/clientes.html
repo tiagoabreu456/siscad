@@ -9,13 +9,14 @@
     
     <table>
         <tbody>
-        {% for cliente in clientes %}
             <tr>
                 <th>Nome</th>
                 <th>Email</th>
                 <th>Celular</th>
                 <th>Data de ingresso</th>
-            </tr>
+            </tr>  
+        {% for cliente in clientes %}
+
             <tr>
                 <td>{{cliente.nome}}</td>
                 <td>{{cliente.email}}</td>
@@ -25,5 +26,6 @@
         {% endfor %}
         </tbody>
     </table>
+    <p><a href="{% url 'core:add_cliente' %}">Adicionar cliente</a></p>
   </body>
 </html>
